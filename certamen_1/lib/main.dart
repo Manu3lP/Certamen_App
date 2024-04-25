@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:certamen_1/pages/login_page.dart';
+import 'package:certamen_1/widgets/nav3.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +33,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: LoginPage(),
     );
   }
 }

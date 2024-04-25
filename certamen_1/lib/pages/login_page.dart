@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'profile_page.dart'; // Importa la página de perfil
+import 'package:certamen_1/widgets/nav3.dart'; // Importa la página de perfil
 
 class LoginPage extends StatelessWidget {
   @override
@@ -7,16 +7,17 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Inicio de Sesión'),
+        titleTextStyle: TextStyle(color: Colors.white, fontSize: 20),
+        backgroundColor: Colors.deepPurple,
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Ingrese sus credenciales',
+              'Bienvenido a Continental',
               style: TextStyle(fontSize: 20),
             ),
-            SizedBox(height: 20),
             TextFormField(
               decoration: InputDecoration(
                 labelText: 'Usuario',
@@ -27,13 +28,12 @@ class LoginPage extends StatelessWidget {
                 labelText: 'Contraseña',
               ),
             ),
-            SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 // Navega a la página de perfil al presionar el botón "Iniciar Sesión"
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => ProfilePage()),
+                  MaterialPageRoute(builder: (context) => Nav3Page()),
                 );
               },
               child: Text('Iniciar Sesión'),
